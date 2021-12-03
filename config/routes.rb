@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
+      resources :properties
       resource :roman_numerals, only: [:index] do
         get 'roman_to_arabic'
         get 'arabic_to_roman'
