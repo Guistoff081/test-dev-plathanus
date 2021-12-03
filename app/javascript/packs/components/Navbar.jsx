@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     marginLeft: theme.spacing(10),
     "&:hover": {
-      color: "white",
-      borderBottom: "1px solid white",
+      color: "grey",
+      borderBottom: "1px solid grey",
     },
   },
 }));
@@ -54,6 +54,9 @@ function Navbar() {
           <div className={classes.navlinks}>
             <Link to="/" className={classes.link}>
               Home
+            </Link>
+            <Link to="/roman-numeral-converter" className={classes.link}>
+              Roman Numerals Converter
             </Link>
             <Link to="/about" className={classes.link}>
               Sobre

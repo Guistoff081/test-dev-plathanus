@@ -21,11 +21,6 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
-    },
     title: {
         fontSize: 14,
     },
@@ -75,7 +70,6 @@ function HomePage() {
                                   Roman numerals Converter
                               </Typography>
                               <Typography className={classes.pos} color="textSecondary">
-                                  Dev FullStack
                               </Typography>
                               <Typography variant="body2" component="p">
                                   Converts a String format Roman Numeral to An Indo-Arabic Numeral.
@@ -84,7 +78,7 @@ function HomePage() {
                               </Typography>
                           </CardContent>
                           <CardActions>
-                              <Button component={Link} to="" size="small" color="primary" >Ver Documentação no Github</Button>
+                              <Button component={Link} to="/roman-numeral-converter" size="small" color="primary" >Acessar Demo</Button>
                           </CardActions>
                       </Card>
                   </Grid>

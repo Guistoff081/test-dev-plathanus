@@ -13,10 +13,10 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles(() => ({
   link: {
     textDecoration: "none",
-    color: "#5ce1e6",
+    color: "black",
     fontSize: "20px",
     "&:hover": {
-      color: "black",
+      color: "grey",
       borderBottom: "1px solid black",
     },
   },
@@ -35,6 +35,11 @@ function DrawerComponent() {
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link className={classes.link} to="/">Home</Link>
+            </ListItemText>
+          </ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
+              <Link className={classes.link} to="/roman-numeral-converter">Roman Numerals Converter</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>

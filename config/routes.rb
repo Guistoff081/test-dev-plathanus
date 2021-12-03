@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resource :roman_numerals, only: [:index] do
         get 'roman_to_arabic'
+        get 'arabic_to_roman'
       end
     end
   end
